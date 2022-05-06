@@ -37,17 +37,9 @@ public class Noticias {
 	private String texto;
 	
 	@UpdateTimestamp
-	private LocalDateTime data;
+	private LocalDateTime data;	
+
 	
-
-	public Temas getTema() {
-		return temas;
-	}
-
-	public void setTema(Temas tema) {
-		this.temas = tema;
-	}
-
 	private String foto;
 	
 
@@ -118,9 +110,14 @@ public class Noticias {
 		this.curtidas = curtidas;
 	}
 
+	public Temas getTemas() {
+		return temas;
+	}
 
-	
-	
+	public void setTemas(Temas temas) {
+		this.temas = temas;
+	}
+
 	
 	
 	
