@@ -69,7 +69,7 @@ public ResponseEntity<Temas> put(@Valid @RequestBody Temas tema){
 }
 
 @ResponseStatus(HttpStatus.NO_CONTENT)
-@DeleteMapping
+@DeleteMapping("/{id}")
 	public void delete(@PathVariable long id) {
 	Optional<Temas> temas = temaRe.findById(id);
 	
