@@ -5,6 +5,8 @@ public class UsuarioLogin {
 	private Long id;
 
 	private String nome;
+	
+	private String tipo;
 
 	private String email;
 
@@ -60,6 +62,14 @@ public class UsuarioLogin {
 
 	public void setToken(String token) {
 		this.token = token;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
 	
 
