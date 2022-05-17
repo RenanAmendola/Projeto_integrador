@@ -15,6 +15,8 @@ import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 @Entity
 @Table(name = "TB_Usuario")
 public class Usuario {
@@ -31,6 +33,7 @@ private String nome;
 @NotNull
 private String tipo = "Common";
 
+@Schema(example = "email@email.com.br")
 @NotNull
 @Email
 private String email;
